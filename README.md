@@ -27,11 +27,27 @@ an anime character.
   - Set up the oobabooga/text-generation-webui and AUTOMATIC1111/stable-diffusion-webui APIs locally.
     
 **4. Configure the application:**
-  - Open appsettings.json and provide the required API credentials and configurations
+  - Open `appsettings.json` and provide the required API credentials and configurations:
+   ```
+  "Twitter": {
+    "ConsumerKey": "",
+    "ConsumerSecret": "",
+    "AccessToken": "",
+    "AccessTokenSecret": ""
+  },
+  "SDWebUI": {
+    "Prompt": "",
+    "Negatives": "",
+    "Endpoint": "your-api-url"
+  },
+  "TextGenWebUI": {
+    "Endpoint": "your-api-url"
+  }
+```
 **5. Run the application:**
-    ```
+    `
     dotnet run
-    ```
+    `
 
 ## Usage
 
